@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-dark-gray: #2f312f;
+  --clr-light-gray: #9db5b2;
+  --clr-off-white: #def0ee;
+  --clr-accent: #94d1be;
+  --clr-white: #ffffff;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.nav-toggle {
+  display: none;
+}
+nav {
+  background-color: rgb(44, 46, 44);
+  color: var(--clr-off-white);
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0;
+  font-family: "Balsamiq Sans", cursive;
+  position: fixed;
+  width: 100vw;
+  z-index: 100;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  font-size: 18pt;
+  width: 40%;
+  justify-content: space-around;
+}
+
+.nav-list li {
+  position: relative;
+}
+
+.nav-list li::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  background-color: var(--clr-accent);
+  height: 3px;
+  left: 0;
+  bottom: -5px;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform 250ms ease-in-out;
+}
+.nav-list li:hover::after {
+  transform: scaleX(1);
+}
+
+.nav-list a {
+  text-decoration: none;
+  color: var(--clr-off-white);
+}
+
+.nav-list a:hover {
+  color: var(--clr-accent);
+}
+
+.hero {
+  background-image: url(../img/kitchen.JPG);
+  background-size: cover;
+  background-color: #5b5f5c;
+  background-blend-mode: multiply;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* home page elements */
+
+.intro {
+  color: var(--clr-accent);
+  border: 3px solid var(--clr-accent);
+  width: 40%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Products page elements */
+
+.body-product {
+  display: flex;
+  flex-wrap: wrap;
+}
+.main-content {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 69px;
+  margin: 0 15%;
+}
+
+.portfolio-grid {
+  display: grid;
+  height: 100%;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 0px;
+  border: 2px solid var(--clr-white);
+}
+.portfolio-item {
+  background-color: var(--clr-dark-gray);
+  color: var(--clr-off-white);
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--clr-white);
+}
+
+.beds,
+.stairs {
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.beds {
+  background-image: url(../img/products/bed.jpg);
+}
+
+.stairs {
+  background-image: url(../img/products/stairs.JPG);
+}
+.doors {
+  grid-row: span 3;
+  grid-column: span 1;
+  background-image: url(../img/products/door.jpg);
+}
+
+.kitchen {
+  grid-row: span 3;
+  grid-column: span 3;
+  background-image: url(../img/kitchen.JPG);
+}
+
+.armoire {
+  grid-row: span 3;
+  grid-column: span 2;
+  background-image: url(../img/products/armoire.jpg);
+}
+
+.tables {
+  grid-row: span 2;
+  grid-column: span 2;
+  background-image: url(../img/products/table.jpg);
+}
+
+.portfolio-item {
+  background-size: cover;
+  color: var(--clr-light-gray);
+  background-position: top left;
+  transition: all ease-in-out 300ms;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.portfolio-item:hover {
+  background-blend-mode: initial;
+  background-position: center;
+}
+.portfolio-item:hover a {
+  background-color: rgba(44, 46, 44, 0.7);
+  border-radius: 5px;
+  padding: 10px;
+  border-bottom: 3px solid var(--clr-accent);
+  color: var(--clr-accent);
+}
+
+.portfolio-item::before {
+  content: "";
+  display: block;
+  background: var(--clr-dark-gray);
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: all ease-in-out 300ms;
+  z-index: -1;
+}
+.portfolio-item:hover::before {
+  opacity: 0.2;
+}
+
+.portfolio-item a {
+  text-decoration: none;
+  color: var(--clr-off-white);
+  width: 85px;
+  text-align: center;
+}
+
+.bed {
+  width: 100vw;
+  height: 93vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.bed h2 {
+  font-size: 38px;
+}
+
+.bed p {
+  width: 60%;
+  font-size: 20px;
+}
+
+.gallery {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.image {
+  width: 23%;
+  height: auto;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.bed1 {
+  background-image: url(../img/products/beds/bed1.JPG);
+}
+
+.bed2 {
+  background-image: url(../img/products/beds/bed2.jpg);
+}
+
+.bed3 {
+  background-image: url(../img/products/beds/bed3.JPG);
+}
+
+.bed4 {
+  background-image: url(../img/products/beds/bed4.jpg);
+}
+
+/* font-family: 'Balsamiq Sans', cursive;
+font-family: 'Montserrat', sans-serif; */
+
+/*smaller screens than 1300*/
+
+@media screen and (max-width: 1300px) {
+  .nav-list {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav-toggle {
+    display: block;
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  .nav-toggle-label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 1em;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-toggle-label span,
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    display: block;
+    background: var(--clr-off-white);
+    height: 2px;
+    width: 2em;
+    position: relative;
+  }
+
+  .nav-toggle-label span::before,
+  .nav-toggle-label span::after {
+    content: "";
+    position: absolute;
+  }
+
+  .nav-toggle-label span::before {
+    bottom: 7px;
+  }
+  .nav-toggle-label span::after {
+    top: 7px;
+  }
+  .nav-list {
+    position: absolute;
+    text-align: left;
+    top: 100%;
+    left: 0;
+    background: rgba(59, 65, 60, 0.7);
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    transition: 400ms ease-in-out;
+    flex-direction: column;
+  }
+
+  .nav-toggle:checked ~ .nav-list {
+    transform: scale(1, 1);
+  }
+  .nav-toggle:checked ~ .nav-list a {
+    opacity: 1;
+    transition: opacity 250ms ease-in-out 250ms;
+  }
+
+  .nav-list li {
+    width: fit-content;
+    margin: 10px 20px;
+  }
+}
