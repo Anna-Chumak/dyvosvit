@@ -4,7 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 :root {
   --clr-dark-gray: #2f312f;
   --clr-light-gray: #9db5b2;
@@ -76,9 +78,20 @@ nav {
 .hero {
   background-image: url(../img/kitchen.JPG);
   background-size: cover;
-  background-color: #5b5f5c;
+  background-color: #808381;
   background-blend-mode: multiply;
   height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-color: var(--clr-dark-gray);
+  color: var(--clr-off-white);
+  height: 5vh;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,168 +110,97 @@ nav {
   align-items: center;
 }
 
-/* Products page elements */
-
-.body-product {
+.advantages {
+  width: 80vw;
+  height: 40vh;
   display: flex;
-  flex-wrap: wrap;
-}
-.main-content {
-  width: 100vw;
-  height: 100vh;
-  padding-top: 69px;
-  margin: 0 15%;
-}
-
-.portfolio-grid {
-  display: grid;
-  height: 100%;
-  grid-template-rows: repeat(6, 1fr);
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 0px;
-  border: 2px solid var(--clr-white);
-}
-.portfolio-item {
-  background-color: var(--clr-dark-gray);
-  color: var(--clr-off-white);
-  font-weight: bold;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid var(--clr-white);
+  margin: auto;
 }
 
-.beds,
-.stairs {
-  grid-row: span 2;
-  grid-column: span 2;
-}
-.beds {
-  background-image: url(../img/products/bed.jpg);
+h2 {
+  font-family: "Balsamiq Sans", cursive;
+  color: var(--clr-dark-gray);
+  font-size: 36pt;
 }
 
-.stairs {
-  background-image: url(../img/products/stairs.JPG);
-}
-.doors {
-  grid-row: span 3;
-  grid-column: span 1;
-  background-image: url(../img/products/door.jpg);
-}
-
-.kitchen {
-  grid-row: span 3;
-  grid-column: span 3;
-  background-image: url(../img/kitchen.JPG);
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-top: 5%;
 }
 
-.armoire {
-  grid-row: span 3;
-  grid-column: span 2;
-  background-image: url(../img/products/armoire.jpg);
-}
-
-.tables {
-  grid-row: span 2;
-  grid-column: span 2;
-  background-image: url(../img/products/table.jpg);
-}
-
-.portfolio-item {
-  background-size: cover;
-  color: var(--clr-light-gray);
-  background-position: top left;
-  transition: all ease-in-out 300ms;
-  position: relative;
-  z-index: 10;
-  cursor: pointer;
-}
-
-.portfolio-item:hover {
-  background-blend-mode: initial;
-  background-position: center;
-}
-.portfolio-item:hover a {
-  background-color: rgba(44, 46, 44, 0.7);
-  border-radius: 5px;
-  padding: 10px;
-  border-bottom: 3px solid var(--clr-accent);
-  color: var(--clr-accent);
-}
-
-.portfolio-item::before {
-  content: "";
-  display: block;
-  background: var(--clr-dark-gray);
-  opacity: 0.8;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  transition: all ease-in-out 300ms;
-  z-index: -1;
-}
-.portfolio-item:hover::before {
-  opacity: 0.2;
-}
-
-.portfolio-item a {
-  text-decoration: none;
-  color: var(--clr-off-white);
-  width: 85px;
-  text-align: center;
-}
-
-.bed {
-  width: 100vw;
-  height: 93vh;
-  text-align: center;
+.features-item {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  align-items: center;
+  color: var(--clr-dark-gray);
 }
-.bed h2 {
-  font-size: 38px;
-}
-
-.bed p {
-  width: 60%;
-  font-size: 20px;
+.features-item i {
+  font-size: 36pt;
+  text-align: center;
+  padding-bottom: 40px;
 }
 
-.gallery {
-  width: 100%;
-  height: 50%;
+.hard-work {
   display: flex;
-  justify-content: space-evenly;
-}
-
-.image {
-  width: 23%;
-  height: auto;
-  background-size: contain;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #808381;
+  background-blend-mode: multiply;
+  background-image: url(../img/hard-work-back.jpg);
   background-repeat: no-repeat;
-}
-.bed1 {
-  background-image: url(../img/products/beds/bed1.JPG);
-}
-
-.bed2 {
-  background-image: url(../img/products/beds/bed2.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  width: 100vw;
 }
 
-.bed3 {
-  background-image: url(../img/products/beds/bed3.JPG);
+.hard-work h2 {
+  color: var(--clr-off-white);
 }
 
-.bed4 {
-  background-image: url(../img/products/beds/bed4.jpg);
+.hard-work h3 {
+  color: var(--clr-off-white);
+  font-size: 24pt;
+  padding-bottom: 30px;
+}
+.customers-wrap {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
 }
 
-/* font-family: 'Balsamiq Sans', cursive;
-font-family: 'Montserrat', sans-serif; */
+.customers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 80vw;
+  height: 50vh;
+  margin: auto;
+}
+
+.cust {
+  width: 15vw;
+  display: flex;
+  justify-content: center;
+}
+
+.cust img {
+  width: 50%;
+  height: auto;
+  margin: auto;
+}
 
 /*smaller screens than 1300*/
 

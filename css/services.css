@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&family=Montserrat&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-dark-gray: #2f312f;
+  --clr-light-gray: #9db5b2;
+  --clr-off-white: #def0ee;
+  --clr-accent: #94d1be;
+  --clr-white: #ffffff;
+}
+
+.banner {
+  background-image: url(../img/services.jfif);
+  padding-top: 65px;
+  width: 100vw;
+  height: 45vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #808381;
+  background-blend-mode: multiply;
+}
+
+.services-all {
+  width: 80vw;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+h2 {
+  font-family: "Balsamiq Sans", cursive;
+  color: var(--clr-dark-gray);
+  font-size: 36pt;
+}
