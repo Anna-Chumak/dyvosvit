@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +10,10 @@ html {
 }
 :root {
   --clr-dark-gray: #2f312f;
-  --clr-light-gray: #9db5b2;
-  --clr-off-white: #def0ee;
-  --clr-accent: #94d1be;
+  --clr-light-gray: #b4a896;
+  --clr-off-white: #e2c7ad;
+  --clr-accent: #877e70;
+  --clr-light-accent: #ac9b80;
   --clr-white: #ffffff;
 }
 
@@ -31,7 +33,7 @@ nav {
   justify-content: space-around;
   align-items: center;
   padding: 20px 0;
-  font-family: "Balsamiq Sans", cursive;
+  font-family: "Noto Sans JP", sans-serif;
   position: fixed;
   width: 100vw;
   z-index: 100;
@@ -86,6 +88,16 @@ nav {
   justify-content: center;
   align-items: center;
 }
+.hero h1 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 36pt;
+}
+
+.hero h3 {
+  font-family: "Noto Sans JP", sans-serif;
+  margin-top: 30px;
+  font-size: 20pt;
+}
 
 footer {
   background-color: var(--clr-dark-gray);
@@ -100,8 +112,8 @@ footer {
 /* home page elements */
 
 .intro {
-  color: var(--clr-accent);
-  border: 3px solid var(--clr-accent);
+  color: var(--clr-off-white);
+  border: 3px solid var(--clr-off-white);
   width: 40%;
   height: 40%;
   display: flex;
@@ -121,7 +133,7 @@ footer {
 }
 
 h2 {
-  font-family: "Balsamiq Sans", cursive;
+  font-family: "Noto Sans JP", sans-serif;
   color: var(--clr-dark-gray);
   font-size: 36pt;
 }
@@ -132,7 +144,7 @@ h2 {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  padding-top: 5%;
+  padding-top: 40px;
 }
 
 .features-item {
@@ -166,11 +178,6 @@ h2 {
   color: var(--clr-off-white);
 }
 
-.hard-work h3 {
-  color: var(--clr-off-white);
-  font-size: 24pt;
-  padding-bottom: 30px;
-}
 .customers-wrap {
   padding: 40px;
   display: flex;
@@ -191,7 +198,7 @@ h2 {
 }
 
 .cust {
-  width: 15vw;
+  width: 20vw;
   display: flex;
   justify-content: center;
 }
@@ -274,5 +281,62 @@ h2 {
   .nav-list li {
     width: fit-content;
     margin: 10px 20px;
+  }
+  .hero {
+    background-position: center;
+  }
+
+  .intro {
+    width: 90%;
+    text-align: center;
+  }
+
+  .advantages {
+    width: 90vw;
+    height: 60vh;
+  }
+
+  h2 {
+    font-size: 28pt;
+    text-align: center;
+  }
+
+  .features {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 0px;
+    width: 100%;
+  }
+
+  .features-item {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .features-item i {
+    padding-bottom: 0px;
+    margin-right: 20px;
+  }
+
+  .hard-work h2 {
+    padding: 20px;
+  }
+
+  .customers-wrap {
+    padding: 20px;
+  }
+
+  .customers-wrap h2 {
+    margin-bottom: 20px;
+  }
+
+  .customers {
+    width: 90vw;
+  }
+
+  .cust {
+    width: 44vw;
   }
 }

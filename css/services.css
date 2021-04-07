@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,30 +9,17 @@
 
 :root {
   --clr-dark-gray: #2f312f;
-  --clr-light-gray: #9db5b2;
-  --clr-off-white: #def0ee;
-  --clr-accent: #94d1be;
+  --clr-light-gray: #b4a896;
+  --clr-off-white: #e2c7ad;
+  --clr-accent: #877e70;
+  --clr-light-accent: #ac9b80;
   --clr-white: #ffffff;
 }
 
-.banner {
-  background-image: url(../img/services.jfif);
-  padding-top: 65px;
-  width: 100vw;
-  height: 45vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #808381;
-  background-blend-mode: multiply;
-}
-
 .services-all {
+  padding-top: 70px;
   width: 80vw;
-  height: 50vh;
+  height: 145vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,8 +27,51 @@
   margin: auto;
 }
 
+.features {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+.features-item {
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.image-service {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-service img {
+  height: 20vh;
+  width: auto;
+}
+
+.item-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.item-text h3 {
+  font-family: "Noto Sans JP", sans-serif;
+  color: var(--clr-dark-gray);
+  font-size: 24pt;
+  padding-bottom: 30px;
+}
+
+.item-text p {
+  width: 70%;
+}
+
 h2 {
-  font-family: "Balsamiq Sans", cursive;
+  font-family: "Noto Sans JP", sans-serif;
   color: var(--clr-dark-gray);
   font-size: 36pt;
 }

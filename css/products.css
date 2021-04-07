@@ -1,9 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400&display=swap");
+
 :root {
   --clr-dark-gray: #2f312f;
-  --clr-light-gray: #9db5b2;
-  --clr-off-white: #def0ee;
-  --clr-accent: #94d1be;
-  --clr-light-accent: #c8e0d9;
+  --clr-light-gray: #f5eae0;
+  --clr-off-white: #eedbca;
+  --clr-accent: #877e70;
+  --clr-light-accent: #ac9b80;
   --clr-white: #ffffff;
 }
 
@@ -15,7 +17,6 @@
   width: 100vw;
   height: 100vh;
   padding-top: 69px;
-  /* margin: 0 15%; */
 }
 
 .portfolio-grid {
@@ -92,7 +93,6 @@
   border-radius: 5px;
   padding: 10px;
   border-bottom: 3px solid var(--clr-accent);
-  color: var(--clr-accent);
 }
 
 .portfolio-item::before {
@@ -130,6 +130,7 @@
   align-items: center;
   margin: auto;
   padding: 0 7vw;
+  position: relative;
 }
 
 .section h2 {
@@ -155,25 +156,111 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
-.item1 {
-  background-image: url(../img/products/beds/bed1.JPG);
+.bed-section .item1 {
+  background-image: url(../img/products/beds/DSC03319а.jpg);
 }
 
-.item2 {
-  background-image: url(../img/products/beds/bed2.jpg);
+.bed-section .item2 {
+  background-image: url(../img/products/beds/2.jpg);
 }
 
-.item3 {
-  background-image: url(../img/products/beds/bed3.JPG);
+.bed-section .item3 {
+  background-image: url(../img/products/beds/3.jpg);
 }
 
-.item4 {
-  background-image: url(../img/products/beds/bed4.jpg);
+.bed-section .item4 {
+  background-image: url(../img/products/beds/4.jpg);
 }
+
+.kitchen-section .item1 {
+  background-image: url(../img/products/kitchen/1.jpg);
+}
+
+.kitchen-section .item2 {
+  background-image: url(../img/products/kitchen/2.jpg);
+}
+
+.kitchen-section .item3 {
+  background-image: url(../img/products/kitchen/3.jpg);
+}
+
+.kitchen-section .item4 {
+  background-image: url(../img/products/kitchen/4.jpg);
+}
+
+.stairs-section .item1 {
+  background-image: url(../img/products/stairs/1.jpg);
+}
+
+.stairs-section .item2 {
+  background-image: url(../img/products/stairs/2.jpg);
+}
+
+.stairs-section .item3 {
+  background-image: url(../img/products/stairs/3.jpg);
+}
+
+.stairs-section .item4 {
+  background-image: url(../img/products/stairs/4.jpg);
+}
+
+.doors-section .item1 {
+  background-image: url(../img/products/door/0.jpg);
+}
+
+.doors-section .item2 {
+  background-image: url(../img/products/door/1.jpg);
+}
+
+.doors-section .item3 {
+  background-image: url(../img/products/door/2.jpg);
+}
+
+.doors-section .item4 {
+  background-image: url(../img/products/door/3.jpg);
+}
+
+.armoire-section .item1 {
+  background-image: url(../img/products/beds/DSC03319а.jpg);
+}
+
+.armoire-section .item2 {
+  background-image: url(../img/products/beds/2.jpg);
+}
+
+.armoire-section .item3 {
+  background-image: url(../img/products/beds/3.jpg);
+}
+
+.armoire-section .item4 {
+  background-image: url(../img/products/beds/4.jpg);
+}
+
+.tables-section .item1 {
+  background-image: url(../img/products/tables/1.jpg);
+}
+
+.tables-section .item2 {
+  background-image: url(../img/products/tables/2.jpg);
+}
+
+.tables-section .item3 {
+  background-image: url(../img/products/tables/3.jpg);
+}
+
+.tables-section .item4 {
+  background-image: url(../img/products/tables/4.jpg);
+}
+
 .bed-section,
 .doors-section {
   background-color: var(--clr-light-gray);
 }
+.before {
+  position: absolute;
+  top: -68px;
+}
+
 .kitchen-section,
 .armoire-section {
   background-color: var(--clr-off-white);
@@ -195,4 +282,88 @@
   font-size: 36pt;
   right: 10px;
   bottom: 10px;
+  z-index: 10;
+}
+
+@media screen and (max-width: 800px) {
+  .body-product {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main-content {
+    width: 100vw;
+    height: 100vh;
+    padding-top: 69px;
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .beds,
+  .stairs,
+  .doors,
+  .kitchen,
+  .armoire,
+  .tables {
+    grid-row: span 2;
+    grid-column: span 3;
+  }
+
+  .section {
+    height: 170vh;
+    padding: 20px;
+  }
+
+  .section p {
+    width: 90%;
+    font-size: 20px;
+  }
+
+  .gallery {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .image {
+    width: 90%;
+    /* height: auto; */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 10px;
+    background-position: center;
+  }
+
+  .doors-section {
+    height: 150vh;
+  }
+
+  .doors-section .image {
+    height: 49%;
+    width: 49%;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+  }
+  .before {
+    position: absolute;
+    top: -68px;
+  }
+
+  .up {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: var(--clr-dark-gray);
+    opacity: 50%;
+    color: var(--clr-off-white);
+    border-radius: 50%;
+    position: fixed;
+    font-size: 36pt;
+    right: 10px;
+    bottom: 10px;
+    z-index: 10;
+  }
 }
