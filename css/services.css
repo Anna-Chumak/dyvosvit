@@ -19,7 +19,7 @@
 .services-all {
   padding-top: 70px;
   width: 80vw;
-  height: 145vh;
+  height: 122vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,10 +30,9 @@
 .features {
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
 }
 .features-item {
-  height: 30vh;
+  height: 33vh;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -49,7 +48,10 @@
 
 .image-service img {
   height: 20vh;
-  width: auto;
+}
+
+.truck-img img {
+  height: 30vh;
 }
 
 .item-text {
@@ -63,15 +65,29 @@
   font-family: "Noto Sans JP", sans-serif;
   color: var(--clr-dark-gray);
   font-size: 24pt;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 
 .item-text p {
   width: 70%;
+  padding-top: 10px;
+  text-indent: 30px;
 }
 
 h2 {
   font-family: "Noto Sans JP", sans-serif;
   color: var(--clr-dark-gray);
   font-size: 36pt;
+}
+
+.truck {
+  animation: lightSpeedInLeft 2s;
+}
+
+.instal {
+  animation: swing 2s ease;
+}
+
+.renovate {
+  animation: fadeIn 2s ease;
 }

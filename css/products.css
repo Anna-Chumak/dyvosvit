@@ -61,7 +61,7 @@
   background-image: url(../img/kitchen.JPG);
 }
 
-.armoire {
+.other {
   grid-row: span 3;
   grid-column: span 2;
   background-image: url(../img/products/armoire.jpg);
@@ -220,20 +220,20 @@
   background-image: url(../img/products/door/3.jpg);
 }
 
-.armoire-section .item1 {
-  background-image: url(../img/products/beds/DSC03319а.jpg);
+.other-section .item1 {
+  background-image: url(../img/products/other/other1.jpg);
 }
 
-.armoire-section .item2 {
-  background-image: url(../img/products/beds/2.jpg);
+.other-section .item2 {
+  background-image: url(../img/products/other/other2.jpg);
 }
 
-.armoire-section .item3 {
-  background-image: url(../img/products/beds/3.jpg);
+.other-section .item3 {
+  background-image: url(../img/products/other/other3.jpg);
 }
 
-.armoire-section .item4 {
-  background-image: url(../img/products/beds/4.jpg);
+.other-section .item4 {
+  background-image: url(../img/products/other/other4.jpg);
 }
 
 .tables-section .item1 {
@@ -262,7 +262,7 @@
 }
 
 .kitchen-section,
-.armoire-section {
+.other-section {
   background-color: var(--clr-off-white);
 }
 
@@ -304,7 +304,7 @@
   .stairs,
   .doors,
   .kitchen,
-  .armoire,
+  .other,
   .tables {
     grid-row: span 2;
     grid-column: span 3;

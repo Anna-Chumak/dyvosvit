@@ -17,11 +17,14 @@ document
   .getElementById("submit-button")
   .addEventListener("click", function (e) {
     let name = document.getElementById("fromName");
-    let email;
-    let phoneNumber;
-    let message;
+    let email = document.getElementById("userEmail");
+    let phoneNumber = document.getElementById("userPhone");
+    let message = document.getElementById("message");
 
     e.preventDefault();
-    // sendEmail();
+    sendEmail();
     name.value = "";
+    email.value = "";
+    phoneNumber.value = "";
+    message.value = "";
   });

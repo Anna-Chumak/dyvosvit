@@ -8,6 +8,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 :root {
   --clr-dark-gray: #2f312f;
   --clr-light-gray: #b4a896;
@@ -21,6 +22,23 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
+header {
+  position: relative;
+}
+.logo {
+  position: absolute;
+  z-index: 110;
+  top: 5px;
+  left: 60px;
+}
+.logo > img {
+  width: 60px;
+  height: auto;
+}
+
+/* nav > h1 {
+  padding-left: 10px;
+} */
 .nav-toggle {
   display: none;
 }
@@ -83,7 +101,7 @@ nav {
   background-color: #808381;
   background-blend-mode: multiply;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -99,11 +117,17 @@ nav {
   font-size: 20pt;
 }
 
+.hero h1,
+.hero h3,
+.intro {
+  animation: fadeIn 4s ease;
+}
+
 footer {
   background-color: var(--clr-dark-gray);
   color: var(--clr-off-white);
   height: 5vh;
-  width: 100vw;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -159,6 +183,10 @@ h2 {
   padding-bottom: 40px;
 }
 
+.features-item > i:hover {
+  animation: flip 2s ease;
+}
+
 .hard-work {
   display: flex;
   flex-direction: column;
@@ -171,7 +199,7 @@ h2 {
   background-size: cover;
   background-position: center;
   height: 50vh;
-  width: 100vw;
+  width: 100%;
 }
 
 .hard-work h2 {

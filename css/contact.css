@@ -16,7 +16,7 @@ body {
 
 .header {
   padding-top: 65px;
-  width: 100vw;
+  width: 100%;
   height: 45vh;
   background-image: url(../img/contact.jfif);
   background-repeat: no-repeat;
@@ -124,8 +124,8 @@ form h2 {
   margin-top: 20px;
 }
 button {
-  background-color: var(--clr-accent);
-  color: var(--clr-dark-gray);
+  background-color: var(--clr-dark-gray);
+  color: var(--clr-off-white);
   font-size: 18px;
   padding: 5px 20px;
   border: 1px solid var(--clr-light-gray);
