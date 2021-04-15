@@ -270,14 +270,21 @@ h2 {
   }
   .customers-wrap {
     width: 90vw;
+    padding: 10px;
+    justify-content: center;
   }
   .customers {
     justify-content: center;
     height: fit-content;
   }
-  .cust {
+  /* .cust {
+    width: 44%;
     margin-top: 20px;
   }
+  .cust img {
+    width: 95%;
+    height: auto;
+  }*/
 }
 
 @media screen and (max-width: 800px) {
@@ -393,6 +400,7 @@ h2 {
 
   .customers-wrap h2 {
     margin-bottom: 20px;
+    justify-content: center;
   }
 
   .customers {
@@ -406,7 +414,7 @@ h2 {
     margin-top: 20px;
   }
   .cust img {
-    width: 95%;
+    width: 70%;
     margin: auto;
   }
 }
