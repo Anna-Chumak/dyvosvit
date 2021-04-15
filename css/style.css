@@ -278,14 +278,6 @@ h2 {
     justify-content: center;
     height: fit-content;
   }
-  /* .cust {
-    width: 44%;
-    margin-top: 20px;
-  }
-  .cust img {
-    width: 95%;
-    height: auto;
-  }*/
 }
 
 @media screen and (max-width: 800px) {
@@ -405,14 +397,14 @@ h2 {
   }
 
   .customers {
-    width: 90%;
+    width: 95%;
     /* margin: auto; */
     justify-content: center;
   }
 
   .cust {
     width: 44%;
-    margin: 10px 10px;
+    margin: 10px auto;
   }
   .cust img {
     width: 70%;
