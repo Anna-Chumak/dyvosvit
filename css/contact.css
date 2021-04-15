@@ -44,7 +44,7 @@ body {
 }
 
 .main-contact {
-  width: 80vw;
+  width: 80%;
   height: 70vh;
   display: flex;
   flex-direction: row;
@@ -144,10 +144,73 @@ button {
   font-size: 24pt;
   margin-bottom: 40px;
 }
-
+.call {
+  position: relative;
+  padding-left: 50px;
+}
+.call > i {
+  font-size: 20px;
+  transform: rotate(90deg);
+  color: var(--clr-dark-gray);
+  position: absolute;
+  left: 20px;
+}
 iframe {
   margin: 50px 0;
   width: 90%;
   height: 50%;
   box-shadow: 5px 5px 5px var(--clr-accent);
+}
+
+@media screen and (max-width: 1400px) {
+  .header {
+    height: 250px;
+  }
+
+  .main-contact {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .main-contact {
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+  }
+  form {
+    width: fit-content;
+    justify-content: center;
+    margin-top: 10px;
+    margin: 0px auto;
+  }
+  .line > input,
+  .line > textarea,
+  .button {
+    width: 400px;
+  }
+
+  button {
+    padding: 10px 30px;
+    font-size: 20px;
+  }
+  iframe {
+    width: 450px;
+    height: 300px;
+  }
+  .contact-info {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .line > input,
+  .line > textarea,
+  .button,
+  iframe {
+    width: 300px;
+  }
+  iframe {
+    height: 200px;
+  }
 }
