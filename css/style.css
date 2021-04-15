@@ -272,6 +272,7 @@ h2 {
     width: 90vw;
   }
   .customers {
+    justify-content: center;
     height: fit-content;
   }
   .cust {
@@ -396,7 +397,8 @@ h2 {
 
   .customers {
     width: 90%;
-    margin: auto;
+    /* margin: auto; */
+    justify-content: center;
   }
 
   .cust {
