@@ -270,6 +270,7 @@ h2 {
   }
   .customers-wrap {
     width: 90vw;
+    height: fit-content;
     padding: 10px;
     justify-content: center;
   }
@@ -411,7 +412,7 @@ h2 {
 
   .cust {
     width: 44%;
-    margin-top: 20px;
+    margin: 10px 10px;
   }
   .cust img {
     width: 70%;
