@@ -31,9 +31,11 @@
   </head>
   <body>
     <header>
-      <div class="logo"><img src="img/logo.png" alt="dyvosvit" /></div>
       <nav>
-        <h1>Dyvosvit</h1>
+        <div class="logo-title">
+          <div class="logo"><img src="img/logo.png" alt="dyvosvit" /></div>
+          <h1>Dyvosvit</h1>
+        </div>
         <input type="checkbox" id="nav-toggle" class="nav-toggle" />
         <ul class="nav-list">
           <li><a href="index.html">Home</a></li>
@@ -102,6 +104,42 @@
         </div>
       </div>
     </section>
+    <div class="counter">
+      <!--LiveInternet counter--><a
+        href="https://www.liveinternet.ru/click"
+        target="_blank"
+        ><img
+          id="licntB202"
+          width="88"
+          height="120"
+          style="border: 0"
+          title="LiveInternet: показано количество просмотров и посетителей"
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAEALAAAAAABAAEAAAIBTAA7"
+          alt=""
+      /></a>
+      <script>
+        (function (d, s) {
+          d.getElementById("licntB202").src =
+            "https://counter.yadro.ru/hit?t27.6;r" +
+            escape(d.referrer) +
+            (typeof s == "undefined"
+              ? ""
+              : ";s" +
+                s.width +
+                "*" +
+                s.height +
+                "*" +
+                (s.colorDepth ? s.colorDepth : s.pixelDepth)) +
+            ";u" +
+            escape(d.URL) +
+            ";h" +
+            escape(d.title.substring(0, 150)) +
+            ";" +
+            Math.random();
+        })(document, screen);
+      </script>
+      <!--/LiveInternet-->
+    </div>
     <footer>&copy; Dyvosvit 2021</footer>
   </body>
 </html>

@@ -8,7 +8,14 @@
   --clr-light-accent: #ac9b80;
   --clr-white: #ffffff;
 }
+.image {
+  transition: transform 0.25s ease;
+}
 
+.image:hover {
+  transform: scale(1.8);
+  z-index: 20;
+}
 .body-product {
   display: flex;
   flex-wrap: wrap;

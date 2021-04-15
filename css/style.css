@@ -21,8 +21,11 @@ html {
 body {
   font-family: "Montserrat", sans-serif;
 }
-
-header {
+.logo-title {
+  display: flex;
+  align-items: center;
+}
+/* header {
   position: relative;
 }
 .logo {
@@ -30,15 +33,12 @@ header {
   z-index: 110;
   top: 5px;
   left: 60px;
-}
+} */
 .logo > img {
-  width: 60px;
+  width: 50px;
   height: auto;
 }
 
-/* nav > h1 {
-  padding-left: 10px;
-} */
 .nav-toggle {
   display: none;
 }
@@ -50,7 +50,7 @@ nav {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  padding: 20px 0;
+  padding: 10px 0;
   font-family: "Noto Sans JP", sans-serif;
   position: fixed;
   width: 100vw;
@@ -109,12 +109,14 @@ nav {
 .hero h1 {
   font-family: "Noto Sans JP", sans-serif;
   font-size: 36pt;
+  text-shadow: 2px 2px 5px var(--clr-dark-gray);
 }
 
 .hero h3 {
   font-family: "Noto Sans JP", sans-serif;
   margin-top: 30px;
   font-size: 20pt;
+  text-shadow: 2px 2px 5px var(--clr-dark-gray);
 }
 
 .hero h1,
@@ -132,7 +134,10 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
+.counter {
+  width: 88;
+  height: 120;
+}
 /* home page elements */
 
 .intro {
@@ -239,9 +244,29 @@ h2 {
 
 /*smaller screens than 1300*/
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1400px) {
   .nav-list {
     width: 60%;
+  }
+  nav {
+    padding: 5px;
+  }
+  .logo img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  .hero {
+    background-position: center;
+  }
+
+  .intro {
+    width: fit-content;
+    padding: 0px 20px;
+    text-align: center;
+  }
+  .advantages {
+    height: fit-content;
+    margin: 40px auto;
   }
 }
 
@@ -321,7 +346,6 @@ h2 {
 
   .advantages {
     width: 90vw;
-    height: 60vh;
   }
 
   h2 {
@@ -331,15 +355,15 @@ h2 {
 
   .features {
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    justify-content: flex-start;
+    align-items: baseline;
     padding-bottom: 0px;
-    width: 100%;
+    width: fit-content;
+    margin: 0 auto;
   }
 
   .features-item {
     flex-direction: row;
-    justify-content: space-around;
     align-items: center;
     margin-bottom: 30px;
   }
