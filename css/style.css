@@ -383,11 +383,11 @@ h2 {
   }
 
   .hard-work h2 {
-    padding: 20px;
+    text-align: center;
   }
 
   .customers-wrap {
-    padding: 20px;
+    padding: 10px;
   }
 
   .customers-wrap h2 {
@@ -395,12 +395,16 @@ h2 {
   }
 
   .customers {
-    width: 90vw;
-    height: fit-content;
+    width: 90%;
+    margin: auto;
   }
 
   .cust {
-    width: 45%;
-    margin-top: 30px;
+    width: 44%;
+    margin-top: 20px;
+  }
+  .cust img {
+    width: 95%;
+    margin: auto;
   }
 }
