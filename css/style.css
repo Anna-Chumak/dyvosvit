@@ -53,7 +53,7 @@ nav {
   padding: 10px 0;
   font-family: "Noto Sans JP", sans-serif;
   position: fixed;
-  width: 100vw;
+  width: 100%;
   z-index: 100;
 }
 
@@ -100,7 +100,7 @@ nav {
   background-size: cover;
   background-color: #808381;
   background-blend-mode: multiply;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -261,12 +261,17 @@ h2 {
 
   .intro {
     width: fit-content;
-    padding: 0px 20px;
+    height: fit-content;
+    padding: 20px 20px;
     text-align: center;
   }
   .advantages {
     height: fit-content;
     margin: 40px auto;
+  }
+  .customers-wrap {
+    height: fit-content;
+    width: 90vw;
   }
 }
 
@@ -341,6 +346,7 @@ h2 {
 
   .intro {
     width: 90%;
+    height: fit-content;
     text-align: center;
   }
 
@@ -386,6 +392,7 @@ h2 {
 
   .customers {
     width: 90vw;
+    height: fit-content;
   }
 
   .cust {
