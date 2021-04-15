@@ -137,10 +137,10 @@ h2 {
     width: 80%;
   }
   .item-text {
-    width: 100%;
+    width: 90%;
   }
   .item-text p {
-    width: 95%;
+    width: 90%;
   }
   .inst {
     flex-direction: column-reverse;
