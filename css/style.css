@@ -239,7 +239,6 @@ h2 {
 .cust img {
   width: 50%;
   height: auto;
-  margin: auto;
 }
 
 /*smaller screens than 1300*/
@@ -401,7 +400,7 @@ h2 {
   }
 
   .cust {
-    width: 44vw;
+    width: 45%;
     margin-top: 30px;
   }
 }
