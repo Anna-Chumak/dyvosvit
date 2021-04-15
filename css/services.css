@@ -17,9 +17,9 @@
 }
 
 .services-all {
-  padding-top: 70px;
+  padding-top: 80px;
   width: 80vw;
-  height: 122vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,11 +32,12 @@
   flex-direction: column;
 }
 .features-item {
-  height: 33vh;
+  height: fit-content;
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 .image-service {
   width: 50%;
@@ -47,11 +48,11 @@
 }
 
 .image-service img {
-  height: 20vh;
+  width: 50%;
 }
 
 .truck-img img {
-  height: 30vh;
+  width: 60%;
 }
 
 .item-text {
@@ -71,7 +72,9 @@
 .item-text p {
   width: 70%;
   padding-top: 10px;
+  padding-bottom: 20px;
   text-indent: 30px;
+  font-size: 18px;
 }
 
 h2 {
@@ -90,4 +93,59 @@ h2 {
 
 .renovate {
   animation: fadeIn 2s ease;
+}
+
+@media screen and (max-width: 1400px) {
+  .services-all {
+    width: 90vw;
+  }
+
+  .item-text p {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .services-all {
+    width: 100vw;
+  }
+  .image-service {
+    width: 40%;
+  }
+  .image-service img {
+    width: 80%;
+  }
+  .item-text {
+    width: 60%;
+  }
+  .item-text p {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .services-all {
+    width: 100vw;
+  }
+  .features-item {
+    flex-direction: column;
+  }
+  .image-service {
+    width: 60%;
+  }
+  .image-service img {
+    width: 80%;
+  }
+  .item-text {
+    width: 100%;
+  }
+  .item-text p {
+    width: 95%;
+  }
+  .inst {
+    flex-direction: column-reverse;
+  }
+  .truck-img img {
+    width: 100%;
+  }
 }
