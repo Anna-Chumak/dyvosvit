@@ -201,6 +201,12 @@ iframe {
   .contact-info {
     width: fit-content;
   }
+  .call {
+    width: fit-content;
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+  }
 }
 
 @media screen and (max-width: 500px) {
