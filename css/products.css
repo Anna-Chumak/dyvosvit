@@ -278,19 +278,6 @@
   background-color: var(--clr-light-accent);
 }
 
-.up {
-  display: inline-block;
-  padding: 10px 15px;
-  background-color: var(--clr-dark-gray);
-  opacity: 50%;
-  color: var(--clr-off-white);
-  border-radius: 50%;
-  position: fixed;
-  font-size: 36pt;
-  right: 10px;
-  bottom: 10px;
-  z-index: 30;
-}
 @media screen and (max-width: 1400px) {
   .main-content {
     padding-top: 55px;

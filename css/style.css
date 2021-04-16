@@ -135,6 +135,19 @@ footer {
   justify-content: center;
   align-items: center;
 }
+.up {
+  display: inline-block;
+  padding: 10px 15px;
+  background-color: var(--clr-dark-gray);
+  opacity: 50%;
+  color: var(--clr-off-white);
+  border-radius: 50%;
+  position: fixed;
+  font-size: 36pt;
+  right: 10px;
+  bottom: 10px;
+  z-index: 30;
+}
 /* .counter {
   width: 88;
   height: 120;
