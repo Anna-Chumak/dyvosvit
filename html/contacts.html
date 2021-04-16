@@ -70,15 +70,15 @@
         <form class="form" action="">
           <h2>Send us a message</h2>
           <div class="line">
-            <input type="text" id="fromName" placeholder="Name" />
+            <input type="text" id="fromName" placeholder="Name" required />
             <i class="far fa-user"></i>
           </div>
           <div class="line">
-            <input type="email" id="userEmail" placeholder="Email" />
+            <input type="email" id="userEmail" placeholder="Email" required />
             <i class="far fa-envelope"></i>
           </div>
           <div class="line">
-            <input type="tel" id="userPhone" placeholder="Phone" />
+            <input type="tel" id="userPhone" placeholder="Phone" required />
             <i class="fas fa-mobile-alt"></i>
           </div>
           <div class="line">
@@ -89,6 +89,7 @@
               cols="30"
               rows="10"
               placeholder="Message"
+              required
             ></textarea>
             <div class="button">
               <button id="submit-button">Send</button>
